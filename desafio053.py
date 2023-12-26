@@ -7,3 +7,4 @@ if inverso == junto:
     print('A frase é um palindromo')
 else:
     print('A frase não é um palindromo')
+
