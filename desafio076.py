@@ -1,0 +1,13 @@
+listagem = ('Açucar', 2.00, 'Teclado', 150.00, 'Mouse', 54.99, 'Estojo', 14.99, 'Compasso', 9.99, 'Mochila', 99.99,
+            'Monitor', 299.99)
+print('--'*15)
+print('LISTAGEM DE PREÇOS'.center(29))
+print('--'*15)
+print(f'{listagem[0]}..........R$ {listagem[1]}')
+print(f'{listagem[2]}..........R$ {listagem[3]}')
+print(f'{listagem[4]}..........R$ {listagem[5]}')
+print(f'{listagem[6]}..........R$ {listagem[7]}')
+print(f'{listagem[8]}..........R$ {listagem[9]}')
+print(f'{listagem[10]}..........R$ {listagem[11]}')
+print(f'{listagem[12]}..........R$ {listagem[13]}')
+print('--'*15)
