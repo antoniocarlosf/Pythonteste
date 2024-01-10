@@ -6,16 +6,19 @@ while True:
     r = str(input('Quer continuar? [S/N] ')).upper()
     galera.append(dado[:])
     dado.clear()
+    while r not in ('S', 'N'):
+        r = str(input('Quer continuar? [S/N] ')).upper()
     if r == 'N':
         break
 
-pesol = galera[0][1]
-pesop = galera[0][1]
+print(f'Ao todo voce cadastrou {len(galera[0])} pessoas')
+pesol = galera.count([1])
+pesop = galera.count([1])
 
 for p in galera:
     if p[1] > pesop:
         pesop = p[1]
         print(f'O maior peso foi de {pesop}. Peso de {p[0]}')
-    elif p[1] < pesol:
+    if p[1] < pesol:
         pesol = p[1]
         print(f'O menor peso foi de {pesol}. Peso de {p[0]}')
